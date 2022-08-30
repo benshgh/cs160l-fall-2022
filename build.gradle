@@ -1,0 +1,58 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'Lab1/src/main/java'
+            srcDirs 'Lab2/src/main/java'
+            srcDirs 'Lab4/src/main/java'
+            srcDirs 'Lab5/src/main/java'
+            srcDirs 'Lab6/src/main/java'
+            srcDirs 'Lab7/src/main/java'
+            srcDirs 'Lab8/src/main/java'
+            srcDirs 'Lab9/src/main/java'
+            srcDirs 'Lab10/src/main/java'
+        }
+    }
+    
+    test {
+        java {
+            srcDirs 'Lab1/src/test/java'
+            srcDirs 'Lab2/src/test/java'
+            srcDirs 'Lab4/src/test/java'
+            srcDirs 'Lab5/src/test/java'
+            srcDirs 'Lab6/src/test/java'
+            srcDirs 'Lab7/src/test/java'
+            srcDirs 'Lab8/src/test/java'
+            srcDirs 'Lab9/src/test/java'
+            srcDirs 'Lab10/src/test/java'
+        }
+    }
+}
+
+dependencies {
+        
+    // Dependencies your project is based on and won't work without any of them
+    implementation group: 'org.jongo', name: 'jongo', version: '1.1'
+    implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '2.+'
+
+    // Dependencies just for testing and won't be added to your project
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '2.0.0'
+
+    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.+'
+    testImplementation group: 'org.easymock', name: 'easymock', version: '3.3.1'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+}
+
