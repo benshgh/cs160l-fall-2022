@@ -13,6 +13,7 @@ sourceSets {
         java {
             srcDirs 'Lab1/src/main/java'
             srcDirs 'Lab2/src/main/java'
+            srcDirs 'Lab3/src/main/java'
             srcDirs 'Lab4/src/main/java'
             srcDirs 'Lab5/src/main/java'
             srcDirs 'Lab6/src/main/java'
@@ -27,6 +28,7 @@ sourceSets {
         java {
             srcDirs 'Lab1/src/test/java'
             srcDirs 'Lab2/src/test/java'
+            srcDirs 'Lab3/src/test/java'
             srcDirs 'Lab4/src/test/java'
             srcDirs 'Lab5/src/test/java'
             srcDirs 'Lab6/src/test/java'
