@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 public class PrimitiveArraysTest {
     //an array of type int
-    int[] intArray;
+    int[] intArray = {1,8,7,11,6,8};
     //an array of Custom class Student
     //note typically arrays are given plural variable name
     // so an array of Fruit would be fruits and an array of Student would be named students
@@ -34,7 +34,7 @@ public class PrimitiveArraysTest {
         //Note carefully how arrays are initialized
 
         //blank array with size 10
-        intArray = new int[10];
+//        intArray = new int[10]; 
 
         //array with predefined values
         //creates a student array of size 5
@@ -88,8 +88,8 @@ public class PrimitiveArraysTest {
     public void checkIfArrayContainsAString() {
         String[] sArray = {"Java", "is", "a", "great", "programming", "language."};
 
-        boolean b = Arrays.asList(sArray).contains("programming");
-        System.out.println(b);
+        boolean b = Arrays.asList(sArray).contains("programmingg");
+        System.out.println("Checking contains functionality: " + b);
     }
 
     @Test
