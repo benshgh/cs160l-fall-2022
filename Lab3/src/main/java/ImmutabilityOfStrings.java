@@ -4,21 +4,6 @@
  */
 public class ImmutabilityOfStrings {
 	
-	public void breakOnConditionOnly(){
-        String[] data1 = {"mz", "my", "my", "mx", "mz", "mx", "my", "mz", "mz", "my", "my", "mx", "mz", "mx", "my", "mz"};
-
-        for(int i=0;i<data1.length;i++){
-            String s = "Super : "+data1[i];
-            System.out.println(s);
-        }
-    }
-	
-	public void breakOnException(){
-        String[] a = {"mz" , "mx", "mz","my","my"};
-        System.out.println(a[1]);
-        System.out.println(a[6]);
-    }
-	
     public void replaceInString() {
     	StringBuilder sb = new StringBuilder("Java is a great language");
     	System.out.println("Before Replacing StringBuilder:: " +sb);
@@ -60,8 +45,6 @@ public class ImmutabilityOfStrings {
     	test.replaceInString();
     	test.concatenateInString();
     	test.passAndManipulateString();
-    	test.breakOnConditionOnly();
-    	test.breakOnException();
     }
     
 }
